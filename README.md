@@ -11,8 +11,13 @@ Build:
 
 squid.conf
 --------
+
+i use the default configuration with the exception of refresh_patterns, which i replaced with my own:
+
     #                 3 month    12 month
     refresh_pattern . 129600 33% 525600
+
+plus the additional configuration:
 
     store_id_program /path/to/store_id_program
     store_id_children 5 startup=1
