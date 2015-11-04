@@ -19,9 +19,9 @@ func main() {
         filename := re.FindString(url)
 
         if len(filename) > 0 {
-            fmt.Println("OK " + "store-id=%v", filename);
+            fmt.Printf("OK store-id=%v", filename);
         } else {
-            fmt.Println("OK " + "store-id=%v", url);
+            fmt.Printf("OK store-id=%v", url);
         }
     }
 }
