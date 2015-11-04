@@ -19,6 +19,8 @@ i use the default configuration with the exception of refresh_patterns, which i 
 
 plus the additional configuration:
 
+    cache_dir ufs /var/spool/squid 10000 16 256
+
     store_id_program /path/to/store_id_program
     store_id_children 5 startup=1
 
