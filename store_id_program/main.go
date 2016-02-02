@@ -10,7 +10,7 @@ import (
 
 func main() {
     reader := bufio.NewReader(os.Stdin)
-    re     := regexp.MustCompile("[^/]+.rpm")
+    re     := regexp.MustCompile(`[^/]+\.rpm`)
 
     for true {
         line, _  := reader.ReadString('\n')
