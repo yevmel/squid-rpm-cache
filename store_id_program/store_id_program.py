@@ -1,7 +1,8 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 
 
 import re
+from six.moves import input
 import sys
 
 
@@ -16,7 +17,7 @@ def main():
     ]
 
     while True:
-        line = raw_input('')
+        line = input('')
         parts = line.split(' ')
         url = parts[0]
         distro = next(
