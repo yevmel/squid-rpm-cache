@@ -29,7 +29,7 @@ def main():
         )
         search_res = rpm_re.search(url)
         print(
-            "OK store-id=%s\n" % (
+            "OK store-id=%s" % (
                 'distro:%s:%s' % (distro, search_res.group())
                 if search_res else url
             )
